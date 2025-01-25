@@ -16,4 +16,4 @@ Using [Overleaf](https://www.overleaf.com/).
 
 ## Preview
 
-![Resume Screenshot](/Preview.png)
+![Resume Screenshot](/preview.png)
