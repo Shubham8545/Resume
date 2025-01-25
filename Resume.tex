@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Huge Shubham Singh} &  \href{https://github.com/Shubham8545}{github.com/Shubham8545}\\
+  \textbf{Bengaluru, India} & \href{https://www.linkedin.com/in/shubham-singh-0700631b1/}{linkedin.com/in/shubham-singh-0700631b1/} \\
+  Ph. : \href{tel:+918545840792}{+91 8545840792} & Email : \href{shubhamsinghbhu2016@gmail.com}{shubhamsinghbhu2016@gmail.com} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{Kalinga Institute of Industrial Technology}}{Bhubaneshwar, India}
+      {BTech in Information Technology;  \href{}{CGPA: 9.20}}{July. 2019 -- June. 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Coursework}{: Data Structure \&\ Algorithms, Object Oriented Programming} \\
+ 	\textbf{Languages}{: C++, Python, HTML, CSS, JavaScript, Typescript} \\
+ 		\textbf{Database}{: MongoDB, Firebase}\\
+ 		\textbf{Frameworks \&\ Tools}{: Angular, NodeJs, ExpressJs, Git, Linux.}\\
+	}}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {\href{https://ezee.ai/}{Ezee.ai}}{Bengaluru, India}
+      {Member of Technical Staff (Full Stack
+Developer)}{June.2023  - Present}
+      \resumeItemListStart
+    \resumeItem{}{Enhanced and maintained the \textbf{lending portal's UI}, implemented \textbf{Keycloak} for user authentication, and added features like \textbf{Digilocker} and \textbf{PAN KYC validation}.}
+    \resumeItem{}{Developed a \textbf{new portal} for log monitoring and database patches, optimized APIs, and implemented \textbf{two-factor authentication} using app, SMS, and email methods.}
+    \resumeItem{}{Utilized \textbf{Angular 18} with standalone components, \textbf{AuthGuard} for route protection, archived logs to \textbf{Azure Blob Storage}, and automated resources with \textbf{Node.js scripts}.}
+\resumeItemListEnd
+
+  
+    \resumeSubheading
+      {\href{https://ezee.ai/}{Ezee.ai}}{Chennai, India}
+      {Intern}{June.2022  - May.2023}
+      \resumeItemListStart
+    \resumeItem{}{Enhanced fintech applications by developing \textbf{vKYC screens} using \textbf{Janus WebRTC} and implementing location features with \textbf{Angular Google Maps (AGM)}.}
+    \resumeItem{}{Improved lending portals by fixing \textbf{UI bugs}, adding \textbf{map features}, and optimizing performance through \textbf{lazy loading} and \textbf{pagination}.}
+    \resumeItem{}{Enhanced the \textbf{lookup microservice} with a \textbf{maker-checker feature} and developed \textbf{customizable screens} to meet dynamic user requirements.}
+\resumeItemListEnd
+
+
+
+    \resumeSubheading
+      {\href{https://ezee.ai/}{Ezee.ai}}{Bhubaneswar, India}
+      {Intern Trainee}{Jan.2022 - May.2022}
+      \resumeItemListStart
+        \resumeItem{}{Gained \textbf{hands-on} experience in \textbf{ReactJS, JavaScript, EDA, and Linux} through training and mentorship.}
+        \resumeItem{}{Developed baseline knowledge of software, applications, and technical processes within creating mobile applications, and website functionality using \textbf{ReactJs} and \textbf{JavaScript}.}
+        \resumeItem{}{Utilized EDA tools to improve efficiency and gained experience working with \textbf{Linux} operating systems.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading{\href{https://nextgenui.vercel.app/}{Next Gen UI}}{{\href{https://github.com/AnkitRajCode/Component-UI}{- Source Code}}}{Dynamic and Intuitive Component Library}{}
+      \resumeItemListStart
+        \resumeItem{}{Created a dynamic and intuitive component library with a vast collection of web components (navbar, footer, cards, buttons, etc.) using NextJs, Tailwind CSS, and Firebase.}
+        \resumeItem{}{Built the library with a focus on simplicity and ease of use by providing code in HTML and React and pursuing the goal of converting it into an NPM package.}
+        \resumeItem{}{Included \textbf{dynamic routing} in the library to enable seamless navigation between the different components.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Achievements-----------
+% \section{Achievements}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+% 	\resumeItemListStart
+ % \resumeSubHeadingListStart
+ %    	\resumeItem{}{Web Dev. Lead at \href{https://gfgkiit.netlify.app/}{\bf GeeksforGeeks KIIT}}
+    	
+ %    	\resumeItem{}{Earned \textbf{5*} Badge in \textbf{C, C++ and DSA} and completed \textbf{30 Days of Code} on  {\href{https://www.hackerrank.com/satyajeetramnit1?hr_r=1}{\bf Hackerrank.}}}
+%   	\resumeItemListEnd
+ \resumeSubHeadingListEnd
+%  \end{itemize}
+%  \vspace{-16pt}
+ %
+ 
+
+%-----------Certifications & Profile Links-----------
+\section{Certifications and Profile Links}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\href{https://www.hackerrank.com/profile/shubham8545}{\textbf{Python, Java, SQL and CSS} (Hackerrank Certifications)} \\
+ 	    \href{https://udemy-certificate.s3.amazonaws.com/image/UC-3c94b037-0e9a-4244-8409-1e592f5dcc3d.jpg}{\textbf{HTML, CSS, & JavaScript} (Udemy)} \\
+ 	      
+ 	    \  \ \\
+ 	    \textbf{Profile Links :}{ $|$ \href{https://leetcode.com/u/shubham8545/}{{Leetcode}} $|$ \href{https://www.hackerrank.com/profile/shubham8545}{{Hackerrank}} $|$ \href{https://github.com/Shubham8545}{{Github}} $|$ \href{https://shubhamsinghkiit.netlify.app/}{{Portfolio}} $|$} \\
+	}}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+%-------------------------------------------
+\end{document}
